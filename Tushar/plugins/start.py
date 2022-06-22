@@ -11,6 +11,7 @@ async def start(event):
 
     if event.is_private:
        await event.client.send_file(event.chat_id,            
+             Config.START_IMG,
              caption=LOVELY_PM_START.format(event.sender.first_name), 
              buttons=[
         [Button.url("➕ Add me to your group", f"https://t.me/{BOT_USERNAME}?startgroup=true")],
