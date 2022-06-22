@@ -20,7 +20,7 @@ async def start(event):
        return
 
     if event.is_group:
-       await event.edit(LOVELY_PM_START.format(event.sender.first_name), buttons=[
+       await event.reply(LOVELY_PM_START.format(event.sender.first_name), buttons=[
         [Button.url("➕ Add me to your group", f"https://t.me/{BOT_USERNAME}?startgroup=true")],
         [Button.url("🗣️ Support", f"https://t.me/{Config.LOVELY_SUPPORT}"), Button.url("📣 Updates", f"https://t.me/{Config.LOVELY_CHANNEL}")],
         [Button.inline("Commands", data="help")]])
