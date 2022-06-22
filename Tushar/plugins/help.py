@@ -2,7 +2,7 @@ from telethon import events, Button
 from Tushar import Tushar, BOT_USERNAME
 
 btn =[
-    [Button.inline("Admin", data="admin")],
+    [Button.inline("Admin", data="admin"), Button.inline("Bans", data="bans")],
     [Button.inline("Home", data="start")]]
 
 HELP_TEXT = "Welcome To help Menu Section\n\nClick on the Buttons!"
